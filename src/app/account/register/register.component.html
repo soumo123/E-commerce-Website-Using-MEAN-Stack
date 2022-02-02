@@ -1,0 +1,37 @@
+<div class="container">
+<div [ngClass]="getClassName()" role="alert">
+{{message}}
+</div>
+
+<form [formGroup]="form">
+  <label>
+    <p class="label-txt">ENTER YOUR NAME</p>
+    <input type="text" formControlName="name" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR EMAIL</p>
+    <input type="text" formControlName="email" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR PASSWORD</p>
+    <input type="text" formControlName="password" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR CONFIRM-PASSWORD</p>
+    <input type="text" formControlName="confirm" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit" (click)="signup()">Created Account</button>
+</form>
+</div>

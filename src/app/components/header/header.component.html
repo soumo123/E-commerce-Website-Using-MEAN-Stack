@@ -1,0 +1,32 @@
+  <section class="app">
+    <aside class="sidebar">
+           <header>
+         Shopping Cart
+        </header>
+      <nav class="sidebar-nav">
+        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+       <!-- <input class="form-control me-2" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search Products"> -->
+       <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search"[(ngModel)]="searchTerm" (keyup)="search($event)">
+
+    </div>
+        <ul>
+          <li>
+            <a routerLink="/product-list"><span>Show Products</span></a>
+          </li>
+          <li>
+            <a routerLink="/add-product"><span class="">Add Products</span></a>
+          </li>
+          <li>
+            <a routerLink="/register"><i class="ion-ios-briefcase-outline"></i> <span class="">SignUp</span></a>
+          </li>
+          <li>
+            <a routerLink="/login"><i class="ion-ios-analytics-outline"></i><span class="">Login</span></a>
+          </li>
+          <li>
+            <a routerLink="/cart"><span class="">{{totalItem}}<i class="fa fa-shopping-cart"></i>Cart</span></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </section>

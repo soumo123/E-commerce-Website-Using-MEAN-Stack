@@ -1,0 +1,63 @@
+<div class="container header">
+    <div class="row">
+        <div class="col-md-6 header-left">
+            <i class="fab fa-canadian-maple-leaf fa-3x"></i>
+        </div>
+        <div class="col-md-6 header-right">
+            <h4>Learn from the best.</h4>
+        </div>
+    </div>		
+</div>
+<div class="container content">
+        <div class="form-content">
+            <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+        <h4>Please fill out the details to continue with our website.</h4>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Product Name</span>
+              </div>
+              <input type="text" class="form-control" formControlName="productname" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">Description</span>
+              </div>
+              <input type="text" class="form-control" formControlName="description" required >
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Product Brand</span>
+                </div>
+                <input type="text" class="form-control" formControlName="brand" required>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Price</span>
+                </div>
+                <input type="text" class="form-control" formControlName="price" required>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Image</span>
+                </div>
+                <input type="text" class="form-control" formControlName="image" required>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Ratings</span>
+                </div>
+                <input type="text" class="form-control" formControlName="rating" required>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Product Category</span>
+                </div>
+                <input type="text" class="form-control" formControlName="category" required>
+              </div>
+            <div class="input-group mb-3">
+                <button type="submit" >Add Product</button>
+            </div>
+        </form>
+        </div>
+        
+    </div>

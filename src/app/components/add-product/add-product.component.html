@@ -1,0 +1,41 @@
+<div class="container">
+      <div class="wrapper animated bounceInLeft">
+        <div class="contact">
+          <h3 class="contact-us">ADD PRODUCT</h3>
+          <div class="alert">Your message has been sent!</div>
+          <form id="contactForm" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            <p class="name-field">
+              <label>Product Name <span>*</span></label>
+              <input type="text" formControlName="productname" required>
+            </p>
+            <p class="company-field">
+              <label>Description</label>
+              <input type="text" formControlName="description" required >
+            </p>
+            <p class="email-field">
+              <label>Brand <span>*</span></label>
+              <input type="text"formControlName="brand" required>
+            </p>
+            <p class="phone-field">
+              <label>Price</label>
+              <input type="number" formControlName="price" required>
+            </p>
+            <p class="message-field full">
+              <label>Image</label>
+              <input type="file" name="image" formControlName="image" required>
+            </p>
+            <p class="full">
+              <label>Rating</label>
+              <input type="text"formControlName="rating" required>
+            </p>
+            <p class="full">
+              <label>Category</label>
+              <input name="text" formControlName="category" required>
+            </p>
+            <p class="submit-button">
+              <button type="submit" >Add product</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
